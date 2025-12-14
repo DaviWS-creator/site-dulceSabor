@@ -5,6 +5,12 @@
     src: url('../fonts/abel/Abel-Regular.ttf');
 }
 
+@media (max-width: 768px) {
+  .banner-img {
+    height: 250px;
+  }
+}
+
 :root {
     --cor-primaria: #196f45;
     --cor-secundaria: #a5283b;
@@ -25,6 +31,10 @@
 
 .bg-cor-secundaria {
     background-color: var(--cor-secundaria);
+}
+
+.bg-cor-terceira {
+    background-color: var(--cor--terceira);
 }
 
 body {
@@ -64,9 +74,44 @@ header { /*nesting css | site para ver se o navegardor consegue usar o nesting c
     }
 }
 
+/* CAROUSEL RESPONSIVO */
 .carousel-item {
-    height: 500px;
     overflow: hidden;
+}
+
+/* Extra small devices (xs) - up to 576px */
+@media (max-width: 575.98px) {
+    .carousel-item {
+        height: 250px;
+    }
+}
+
+/* Small devices (sm) - 576px and up */
+@media (min-width: 576px) {
+    .carousel-item {
+        height: 300px;
+    }
+}
+
+/* Medium devices (md) - 768px and up */
+@media (min-width: 768px) {
+    .carousel-item {
+        height: 400px;
+    }
+}
+
+/* Large devices (lg) - 992px and up */
+@media (min-width: 992px) {
+    .carousel-item {
+        height: 500px;
+    }
+}
+
+/* Extra large devices (xl) - 1200px and up */
+@media (min-width: 1200px) {
+    .carousel-item {
+        height: 600px;
+    }
 }
 
 .logo{
@@ -79,3 +124,4 @@ header { /*nesting css | site para ver se o navegardor consegue usar o nesting c
     display: block;
     margin: 0 auto;
 }
+
