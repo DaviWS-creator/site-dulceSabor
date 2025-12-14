@@ -41,6 +41,7 @@ body {
     font-family: 'Abel', Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: var(--cor--terceira);
 
     min-height: 100vh;
 }
